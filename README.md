@@ -1,5 +1,14 @@
 [![Build Status](https://github.com/dotnet-architecture/eShopOnWeb/workflows/eShopOnWeb%20Build%20and%20Test/badge.svg)](https://github.com/dotnet-architecture/eShopOnWeb/actions)
 
+# My Goal on this project
+
+Every body is talking about Modular-Monolith application so what I want to do is to refactor this Monolith application to the Modular-Monolith and use some Technologies that I wanna try.
+
+`Details will be add more`
+
+"Gonna add architecture image later"
+
+
 # Microsoft eShopOnWeb ASP.NET Core Reference Application
 
 Sample ASP.NET Core reference application, powered by Microsoft, demonstrating a single-process (monolithic) application architecture and deployment model. If you're new to .NET development, read the [Getting Started for Beginners](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Getting-Started-for-Beginners) guide.
@@ -139,14 +148,23 @@ You can also run the samples in Docker (see below).
 
     dotnet ef migrations add InitialIdentityModel --context appidentitydbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj -o Identity/Migrations
     ```
+## Running with nix devShell 
+
+Gonna add more
 
 ## Running the sample in the dev container
+
+You can still potentially use dev container but I use nix and nvim
 
 This project includes a `.devcontainer` folder with a [dev container configuration](https://containers.dev/), which lets you use a container as a full-featured dev environment.
 
 You can use the dev container to build and run the app without needing to install any of its tools locally! You can work in GitHub Codespaces or the VS Code Dev Containers extension.
 
 Learn more about using the dev container in its [readme](/.devcontainer/devcontainerreadme.md).
+
+## Running with a Hashicorp Nomad (Coming Soon)
+
+I'm gonna try to create nomad-template to run the application and services on Nomad **dev** cluster but you can test it on real Nomad cluster
 
 ## Running the sample using Docker
 
